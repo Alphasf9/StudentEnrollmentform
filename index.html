@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Register form</title>
+</head>
+
+<bod>
+    <div class="container">
+        <h1>SAMPLE</h1>
+        <h3>Student Enrollment form</h3>
+    </div>
+    <div class="registration-details">
+        <div class="left-content">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="details" required>
+            </div>
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="email" id="email" class="details" required>
+            </div>
+            <div class="form-group">
+                <label for="website">website:</label>
+                <input type="website" id="website" class="details" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" class="details" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="skills">skills:</label>
+                <div>
+                    <input type="checkbox" id="skill-1" name="skill" value="JAVA">
+                    <label for="skill-1">JAVA</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="skill-2" name="skill" value="HTML">
+                    <label for="skill-2">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="skill-3" name="skill" value="CSS">
+                    <label for="skill-3">CSS</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="avatar">Avatar:</label>
+                <input type="file" id="avatar" required>
+            </div>
+            <div class="form-group" class="submitting">
+                <input type="submit" value="submit" id="submitall" onclick="displayData()">
+            </div>
+            <div id="output" class="output"></div>
+        </div>
+        <div class="line"></div>
+    </div>
+    </div>
+
+    <div class="container-2">
+        <h1 id="info">Enrolled Students</h1>
+    </div>
+    <div class="box">
+        <img id="image1" src="businessman-g058877a9f_640.png">
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>

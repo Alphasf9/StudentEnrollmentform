@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #013a63;
+    /* background-color: #444444; */
+    /* background-color: rgba(187,127,247,100%); */
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    color: #8ecae6;
+}
+
+
+.container h3 {
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    margin-top: 23px;
+    background-color: #fb8500;
+    color: #fefae0;
+    padding: 16px;
+    font-size: 1.5rem;
+    box-shadow: 1px 6px 7px cadetblue;
+}
+
+.line {
+    border: 2px solid #c8b6ff;
+    width: 1px;
+    height: 973px;
+    margin: 23px auto;
+}
+
+.left-content {
+    position: absolute;
+    margin: 36px 117px 8px 175px;
+}
+
+.form-group {
+    padding: 23px;
+}
+
+.form-group label {
+    font-family: 'Bacasime Antique', serif;
+    font-size: 2rem;
+    color: aquamarine;
+}
+
+.registration-details input {
+    width: 12rem;
+    border-radius: 8px;
+    height: 35px;
+}
+
+#name {
+    margin-left: 77px;
+}
+
+
+#email {
+    margin-left: 84px
+}
+
+#website {
+    margin-left: 63px;
+}
+
+#gender {
+    margin-left: 77px;
+    padding: 4px;
+    width: 187px;
+    text-align: center;
+}
+
+#image {
+    margin-left: 25px;
+}
+
+#image-link {
+    margin-left: 24px;
+}
+
+#imagetext {
+    margin-left: -21px;
+}
+
+#submitall {
+    cursor: pointer;
+    font-family: 'Bacasime Antique', serif;
+    font-size: 24px;
+    border: 2px solid floralwhite;
+}
+
+#submitall:hover {
+    background-color: rgb(133, 135, 135);
+}
+
+#info {
+    position: absolute;
+    right: 311px;
+    top: 191px;
+    font-family: 'Bacasime Antique', serif;
+    display: none;
+}
+
+#info::after {
+    content: "Description";
+    position: relative;
+    top: 139px;
+    left: -168px;
+    font-family: 'Bacasime Antique', serif;
+}
+
+
+#info::before {
+    content: "Image";
+    position: absolute;
+    top: 139px;
+    left: 451px;
+    font-family: 'Bacasime Antique', serif;
+}
+
+
+#image1 {
+    height: 83px;
+    width: 77px;
+    position: relative;
+    right: -469px;
+    top: 50px;
+    padding: 12px;
+    border: 2px solid #4a4e69;
+    background-color: #f4978e;
+}
+
+.box {
+    border: 3px solid #f1faee;
+    height: 377px;
+    width: 585px;
+    position: absolute;
+    right: 110px;
+    top: 331px;
+    display: none;
+}
+
+.box::before {
+    content: "";
+    width: 577px;
+    height: 0;
+    border: 2px solid black;
+    position: relative;
+    transform: rotate(180deg);
+    display: block;
+    top: 31px;
+}
+
+
+.box::after {
+    content: "";
+    width: 367px;
+    height: 0;
+    border: 2px solid black;
+    position: absolute;
+    transform: rotate(90deg);
+    display: block;
+    top: 184px;
+    right: -5px;
+}
+
+
+#output {
+    position: absolute;
+    left: 700px;
+    top: 193px;
+    font-family: 'Bacasime Antique', serif;
+    line-height: 29px;
+}
+
+#output h3 {
+    display: inline;
+}
+
+#output p {
+    /* word-break: break-all; */
+    white-space: pre-wrap;
+}
+
+@media only screen and (max-width:1168px) {
+    .line {
+        display: none;
+    }
+
+    .form-group {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width:496px) {
+    .container h3 {
+        width: 496px;
+    }
+
+    .form-group {
+        margin-left: -131px;
+    }
+}
